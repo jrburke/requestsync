@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <style type="text/css">
+    button {
+      font-size: 1rem;
+      line-height: 2rem;
+    }
+  </style>
+  <title>requestsync</title>
+</head>
+
+<body role="application">
+  <p>Check adb logcat to see what data is found.</p>
+
+  <button id="listsync">List registrations in logcat</button>
+
+  <p>After tapping the <b>Trigger app request-sync</b> button, close the webapp,
+  remove it from the open apps list (tap and hold on home button and remove the
+  request-sync app from that list)</p>
+
+  <p>Wait 100 seconds to see if the app is opened and mozSetMessageHandler is
+  called for 'request-sync'.</p>
+
+  <button id="dosync">Trigger app request-sync in 100 seconds</button>
+
+  <p></p>
+
+  <button id="removesync">Remove request-sync bound to 100 seconds</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
