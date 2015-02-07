@@ -21,14 +21,24 @@
   remove it from the open apps list (tap and hold on home button and remove the
   request-sync app from that list)</p>
 
-  <p>Wait 100 seconds to see if the app is opened and mozSetMessageHandler is
-  called for 'request-sync'.</p>
+  <p>Then wait for the sync interval to pass to see if the app is opened and mozSetMessageHandler is called for 'request-sync'.</p>
 
-  <button id="dosync">Trigger app request-sync in 100 seconds</button>
-
+  <button id="regsync100">Register recurring sync in 100 seconds</button>
   <p></p>
 
-  <button id="removesync">Remove request-sync bound to 100 seconds</button>
+  <button id="regsync200">Register recurring sync in 200 seconds</button>
+
+  <hr>
+
+  <button id="removesync100">Unregister 100 seconds</button>
+  <p></p>
+
+  <button id="removesync200">Unregister 200 seconds</button>
+  <p></p>
+
+  <button id="removesyncAll">Unregister all</button>
+  <p></p>
+
 
   <script src="js/main.js"></script>
 </body>
